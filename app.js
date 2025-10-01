@@ -18,7 +18,7 @@ async function main() {
         // frequency_penalty: 1,
         // presence_penalty:1,
         response_format: { 'type': 'json_object' },
-        model: 'llama-3.3-70b-versatile',
+        model: process.env.MODEL,
         messages: [
             {
                 role: 'system',
